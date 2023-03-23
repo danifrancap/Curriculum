@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <div>
+        <h1>Introduçao ao JavaScript</h1>
+        <div>
+            <h2>Ver Data e hora </h2>
+            <p>clique no botao para ver a data ea hora do sistema .</p>
+            <button 
+            onclick="document.getElementById('dh').innerHTML = Date()">
+                Veja a data e hora
+            </button>
+            <p id="dh"></p>
+        </div>
+        <div>
+            <h2>Transferir informaçoes com JS</h2>
+
+            <p id="par1">Este parafrago sera copiado para o pargrafo abaixo do botao</p>
+            <button onclick="cleber()">
+                clique aqui pra copiar</button>
+            <p id="par2"></p>
+        </div>
+    </div>
+    <div>
+        <h2>Editando o scr de uma imagem</h2>
+        <img idsrc="" alt="">
+        <button onclick="ney()">Cade o ney ?</button>
+        <img id="ney1"src="neymar1.webp" alt="NEYMAAAAAA" width="30%">
+        <button onclick="ney2()">ACHOUUUUU</button>
+        
+    </div>
+    <div>
+        <h2>alterando estilo com js</h2>
+        <p id="muda">muda muda muda ainain</p>
+        <button onclick="muda()" onmouseover="edit()"onmouseout = "edit2()"> clique para mudar o estilo</button>
+    </div>
+    <div>
+        <h2>janela de alerta</h2>
+        <p id="jane">janelinha janelinha</p>
+        <button onclick="janela()"> janelinha hehe</button>
+    </div>
+    <script>
+        function cleber(){
+            var x = document.getElementById('par1').innerHTML;
+            document.getElementById('par2').innerHTML = x; 
+
+        }
+        function ney(){
+            document.getElementById('ney1').src = "neymar1.webp";
+        }
+        function ney2(){
+            document.getElementById('ney1').src = "neymar2.jpg";
+        }
+        function muda(){
+            document.getElementById("muda").style.fontSize = '5em' };
+
+            function edit (){
+                document.getElementById('muda').style.display = 'none';
+            }
+            function edit2 (){
+                document.getElementById('muda').style.display = 'block';
+            }
+            function janela(){
+                window.alert("janelinha ta dificil continuar");
+            }
+
+    </script>
+
+
+
+</body>
+</html>
