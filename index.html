@@ -4,25 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="atividade.js"></script>
-    <title>Tabuada</title>
+    <script src="aula72.js"></script>
+    <title>Document</title>
 </head>
 <body>
-    <div><h1>Tabuada</h1></div>
     <div>
-<label for="numero">Digite qual numero da tabuada deseja ver</label>
-
-    <input type="number" id="numero">
-    <button onclick="tabuada()">Enviar</button>
-</div>
-    <div id="result"></div>
-
-
-    <div><h1>contadore de cliques </h1>contador de cliuqes</div>
-    <p>
-        este botao recebeu <span id="cliques">0</span>
-        cliques
-    </p>
-    <button onclick="contador()">clica</button>
+        <div>
+            <h1>Formulario Java Scriot</h1>
+            <p>selecione seu genero</p>
+            <p>
+                Genero :
+                <input type="radio" name="gender" value="Masculino">Masculino
+                <input type="radio" name="gender" value="Feminino">Femea
+                <input type="radio" name="gender" value="Burro">eleitor do lula
+            </p>
+            <button onclick="getRadio()">Enviar</button>
+            <div id="radioResult"></div>
+        </div>
+        <h1>selecione seu plano</h1>
+        <select id="select1">
+            <option value="Free">Free</option>
+            <option value="Basic">Basic</option>
+            <option value="Preminun">Premium</option>
+        </select>
+        <p>Oplano selecionado é 
+            <span class="output"></span>
+        </p>
+        <button onclick="getOption()">Clique para ver o plano selecionado</button>
+    </div>
+    <div>
+        <h1>elementos checkbox</h1>
+        <p>quais sao suas prioridades</p>
+        <p>
+            Trabaho 
+            <input type="checkbox" value="Trabaho">
+        </p>
+        <p>
+            Saúde
+            <input type="checkbox" value="Saude">
+        </p>
+        <p>
+            Estudos 
+            <input type="checkbox" value="Estudos">
+        </p>
+        <button onclick="getCheckBox()">Enviar</button>
+        <p>minhas prioridades são 
+            <span id="pri">...</span>
+        </p>
+    </div>
 </body>
 </html>
